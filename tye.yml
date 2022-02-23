@@ -1,0 +1,10 @@
+name: myservices
+services:
+- name: customerservice
+  azureFunction: customerservice/
+  bindings:
+   - port: 7071
+- name: orderservice
+  azureFunction: orderservice/
+  bindings:
+   - port: 7072
